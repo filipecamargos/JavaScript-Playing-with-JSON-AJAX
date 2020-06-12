@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX & JSON</title>
+    <link rel="stylesheet" type="text/css" href="source/css.css">
+</head>
+
+<body>
+    <h1 id="big-text">Retrieving Data with AJAX & JSON</h1>
+    <div id="big-container">
+        <!--AJAX BOX-->
+        <div id="ajaxBlock">
+            <h1>AJAX</h1>
+            <div id=selector>
+                <label for="country">Choose a Country</label><br>
+                <select id=country>
+                        <option selected>None</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="russia">Russia</option>
+                        <option value="brazil">Brazil</option>
+                    </select>
+            </div>
+            <pre id="info1"></pre>
+        </div>
+        <div id="box-info">
+            <!--JASON BOX-->
+            <h1>JSON</h1>
+            <label for="text">Enter JSON file to be retrieved</label><br>
+            <input type="text" id="jsonText"><span id="intruction-file"></span><br><br>
+            <button type="button" id="button">Request</button>
+
+            <div id="jason_display">
+            </div>
+        </div>
+    </div>
+    <script src="source/javaScript.js"></script>
+</body>
+
+</html>
